@@ -147,6 +147,8 @@ export interface ArcHttp {
      * helpers.parseBody - https://github.com/architect/functions/blob/master/src/http/helpers/body-parser.js
      */
     helpers: {
-      parseBody(req: HttpRequest): Record<string, any>;
+      /* eslint-disable @typescript-eslint/no-explicit-any */
+      parseBody(req: HttpRequest): Record<string, unknown>;
+      /* eslint-enable @typescript-eslint/no-explicit-any */
     };
 }
