@@ -143,4 +143,10 @@ export interface ArcHttp {
      * https://arc.codes/docs/en/reference/runtime/node#arc.http.session
      */
     session: HttpSession;
+    /**
+     * helpers
+     */
+    helpers: {
+      parseBody(req: HttpRequest): object;
+    };
 }

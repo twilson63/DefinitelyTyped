@@ -49,3 +49,7 @@ const asap = arc.http.proxy({
 });
 
 exports.handler = arc.http.async(asap);
+
+//////////////////////
+// tests for arc.http.helpers.parseBody:
+const parseBody = (req: arc.HttpRequest) => arc.http.helpers.parseBody(req);
